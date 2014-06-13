@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Place",
+    "desktop": {
+      "url": "http://www.lonelyplanet.com/france/paris",
+      "result": "http://www.webpagetest.org/result/140612_BK_HSP/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Hotels List Page",
+    "desktop": {
+      "url": "www.lonelyplanet.com/france/paris/hotels",
+      "result": "http://www.webpagetest.org/result/140612_6K_HSW/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Hotel Detail Page",
+    "desktop": {
+      "url": "www.lonelyplanet.com/france/paris/hotels/l-hotel",
+      "result": "http://www.webpagetest.org/result/140612_NQ_HTS/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Things To Do List Page",
+    "desktop": {
+      "url": "www.lonelyplanet.com/france/things-to-do",
+      "result": "http://www.webpagetest.org/result/140612_2H_HT3/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Things To Do Detail Page",
+    "desktop": {
+      "url": "www.lonelyplanet.com/france/paris/activities/theatres-concert-halls-cinemas/moulin-rouge-show-paris",
+      "result": "http://www.webpagetest.org/result/140613_ST_A2F/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Images",
+    "desktop": {
+      "url": "www.lonelyplanet.com/france/paris/images",
+      "result": "http://www.webpagetest.org/result/140612_7D_HVA/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Interests",
+    "desktop": {
+      "url": "www.lonelyplanet.com/adventure-travel",
+      "result": "http://www.webpagetest.org/result/140612_M8_HVN/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  },
+  {
+    "title": "Adventure Tours Landing Page",
+    "desktop": {
+      "url": "www.lonelyplanet.com/adventure-tours",
+      "result": "http://www.webpagetest.org/result/140612_W0_HVV/",
+      "video": ""
+    },
+    "mobile": {
+      "url": "",
+      "result": "",
+      "video": ""
+    }
+  }
+]
