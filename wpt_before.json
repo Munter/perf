@@ -1,106 +1,98 @@
 [
   {
     "title": "Place",
-    "desktop": {
-      "url": "http://www.lonelyplanet.com/france/paris",
+    "url": "http://www.lonelyplanet.com/france/paris",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_BK_HSP/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/place/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_QQ_CKR/7/details/",
+      "video": "http://assets.staticlp.com/perf/videos/before/place/3g.mp4"
     }
   },
   {
     "title": "Hotels List Page",
-    "desktop": {
-      "url": "www.lonelyplanet.com/france/paris/hotels",
+    "url": "http://www.lonelyplanet.com/france/paris/hotels",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_6K_HSW/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/hotel-list/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_ME_CXM/",
+      "video": "http://assets.staticlp.com/perf/videos/before/hotel-list/3g.mp4"
     }
   },
   {
     "title": "Hotel Detail Page",
-    "desktop": {
-      "url": "www.lonelyplanet.com/france/paris/hotels/l-hotel",
+    "url": "http://www.lonelyplanet.com/france/paris/hotels/l-hotel",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_NQ_HTS/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/hotel/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_NC_D0N/",
+      "video": "http://assets.staticlp.com/perf/videos/before/hotel/3g.mp4"
     }
   },
   {
     "title": "Things To Do List Page",
-    "desktop": {
-      "url": "www.lonelyplanet.com/france/things-to-do",
+    "url": "http://www.lonelyplanet.com/france/things-to-do",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_2H_HT3/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/ttd-list/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
+    "3g": {
+      "result": "http://assets.staticlp.com/perf/videos/before/ttd-list/3g.mp4",
       "video": ""
     }
   },
   {
     "title": "Things To Do Detail Page",
-    "desktop": {
-      "url": "www.lonelyplanet.com/france/paris/activities/theatres-concert-halls-cinemas/moulin-rouge-show-paris",
+    "url": "http://www.lonelyplanet.com/france/paris/activities/theatres-concert-halls-cinemas/moulin-rouge-show-paris",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140613_ST_A2F/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/ttd/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_71_D0Z/",
+      "video": "http://assets.staticlp.com/perf/videos/before/ttd/3g.mp4"
     }
   },
   {
     "title": "Images",
-    "desktop": {
-      "url": "www.lonelyplanet.com/france/paris/images",
+    "url": "http://www.lonelyplanet.com/france/paris/images",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_7D_HVA/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/images/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_A7_D11/",
+      "video": "http://assets.staticlp.com/perf/videos/before/images/3g.mp4"
     }
   },
   {
     "title": "Interests",
-    "desktop": {
-      "url": "www.lonelyplanet.com/adventure-travel",
+    "url": "http://www.lonelyplanet.com/adventure-travel",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_M8_HVN/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/interests/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_Z1_D3B/",
+      "video": "http://assets.staticlp.com/perf/videos/before/interests/3g.mp4"
     }
   },
   {
     "title": "Adventure Tours Landing Page",
-    "desktop": {
-      "url": "www.lonelyplanet.com/adventure-tours",
+    "url": "http://www.lonelyplanet.com/adventure-tours",
+    "cable": {
       "result": "http://www.webpagetest.org/result/140612_W0_HVV/",
-      "video": ""
+      "video": "http://assets.staticlp.com/perf/videos/before/landing-pages/cable.mp4"
     },
-    "mobile": {
-      "url": "",
-      "result": "",
-      "video": ""
+    "3g": {
+      "result": "http://www.webpagetest.org/result/140613_Q5_D43/",
+      "video": "http://assets.staticlp.com/perf/videos/before/landing-pages/3g.mp4"
     }
   }
 ]
