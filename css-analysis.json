@@ -1,6 +1,7 @@
 [
   {
   "name": "Common Core",
+  "id": "core",
   "published": "2014-06-13T13:56:22.393Z",
   "paths": [
     "http://assets.staticlp.com/assets/common_core_no_font.css"
@@ -122,6 +123,7 @@
 },
 {
   "name": "Fonts",
+  "id": "fonts",
   "published": "2014-06-15T23:59:03.396Z",
   "paths": [
     "http://assets.staticlp.com/assets/fonts.css"
@@ -171,6 +173,7 @@
 },
 {
   "name": "Homepage",
+  "id": "homepage",
   "published": "2014-06-16T00:00:15.783Z",
   "paths": [
     "http://assets.staticlp.com/assets/application-69770b61294605ebdfa2bdc3b790d718.css"
@@ -263,6 +266,7 @@
 },
 {
   "name": "Waldorf",
+  "id": "waldorf",
   "published": "2014-06-16T00:01:11.927Z",
   "paths": [
     "http://assets.staticlp.com/assets/application-24e08ac923cfa55b4dddfcc6a19977ce.css"
@@ -401,6 +405,7 @@
 },
 {
   "name": "Best in Travel",
+  "id": "best-in-travel",
   "published": "2014-06-16T00:06:30.166Z",
   "paths": [
     "http://assets.staticlp.com/assets/destinations.css"
@@ -511,6 +516,7 @@
 },
 {
   "name": "Search",
+  "id": "search",
   "published": "2014-06-16T00:07:15.074Z",
   "paths": [
     "http://assets.staticlp.com/assets/application-a1ec1d4a3537d781b5bb17ea9b1c9eda.css"
@@ -621,6 +627,7 @@
 },
 {
   "name": "Community",
+  "id": "community",
   "published": "2014-06-16T00:09:05.392Z",
   "paths": [
     "http://assets.staticlp.com/assets/main-4dac02c9185350195b9d668e36e88739.css"
@@ -747,6 +754,7 @@
 },
 {
   "name": "Luna",
+  "id": "luna",
   "published": "2014-06-16T00:09:39.699Z",
   "paths": [
     "http://assets.staticlp.com/assets/main-f0510eb3fe46254f8400af5f591ba42a.css"
@@ -872,6 +880,7 @@
 },
 {
   "name": "Car Rental",
+  "id": "car-rental",
   "published": "2014-06-16T00:10:33.055Z",
   "paths": [
     "http://assets.staticlp.com/assets/car-rental/car-rental-0cf7787b08c884ee0f5fc1f6ab493a6b.css"
@@ -986,6 +995,7 @@
 },
 {
   "name": "Flights",
+  "id": "flights",
   "published": "2014-06-16T00:11:08.443Z",
   "paths": [
     "http://assets.staticlp.com/assets/flights/flights-836a29dbe83c84a1840486dc4c66309e.css"
@@ -1104,6 +1114,7 @@
 },
 {
   "name": "Hotels",
+  "id": "hotels",
   "published": "2014-06-16T00:11:48.405Z",
   "paths": [
     "http://assets.staticlp.com/assets/hotels/hotels-ad8a20165d8dd0028f62746c5ab648d8.css"
@@ -1221,6 +1232,7 @@
 },
 {
   "name": "Adventure Tours",
+  "id": "adventure-tours",
   "published": "2014-06-16T00:17:16.162Z",
   "paths": [
     "http://assets.staticlp.com/assets/adventure-tours/adventure-tours-6acd1af29b61f3a785fa703cdde5c664.css"
@@ -1332,6 +1344,7 @@
 },
 {
   "name": "Sightseeing Tours",
+  "id": "sightseeing-tours",
   "published": "2014-06-16T00:18:11.183Z",
   "paths": [
     "http://assets.staticlp.com/assets/sightseeing-tours/sightseeing-c25adf93774ed17573cb331e997dc324.css"
@@ -1443,6 +1456,7 @@
 },
 {
   "name": "Travel Insurance",
+  "id": "travel-insurance",
   "published": "2014-06-16T00:18:51.655Z",
   "paths": [
     "http://assets.staticlp.com/assets/travel-insurance/original/travel-insurance-0be09758a8b1ba83492d52130cad1a33.css"
@@ -1557,17 +1571,4 @@
   ],
   "mediaQueries": 13
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 ]
