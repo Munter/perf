@@ -3,17 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "grunt": "latest",
-    "grunt-contrib-connect": "latest",
-    "grunt-concurrent": "latest",
-    "grunt-open": "latest",
-    "grunt-phantomas": "latest",
-    "matchdep": "latest",
-    "grunt-pagespeed": "~0.2.0",
-    "grunt-css-metrics": "~0.1.2",
-    "gulp": "~3.8.0",
-    "node-curl": "~0.3.1",
     "request": "~2.36.0",
-    "stylestats": "~4.1.1"
+    "stylestats": "~4.1.1",
+    "jsonminify": "~0.2.3"
   }
 }
