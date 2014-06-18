@@ -10,7 +10,10 @@
     "grunt-phantomas": "latest",
     "matchdep": "latest",
     "grunt-pagespeed": "~0.2.0",
-    "grunt-stylestats": "~0.1.3",
-    "grunt-css-metrics": "~0.1.2"
+    "grunt-css-metrics": "~0.1.2",
+    "gulp": "~3.8.0",
+    "node-curl": "~0.3.1",
+    "request": "~2.36.0",
+    "stylestats": "~4.1.1"
   }
 }
