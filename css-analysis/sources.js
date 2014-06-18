@@ -73,11 +73,5 @@ module.exports = [
     "id": "sightseeing-tours",
     "url": "http://www.lonelyplanet.com/sightseeing-tours",
     "css": "sightseeing-tours/sightseeing"
-  },
-  {
-    "name": "Travel Insurance",
-    "id": "travel-insurance",
-    "url": "http://www.lonelyplanet.com/travel-insurance",
-    "css": "travel-insurance/original/travel-insurance"
   }
 ];

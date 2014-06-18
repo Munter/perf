@@ -1,27 +1,33 @@
-var sites = require('./sources.js'),
-    request = require('request'),
+// Node modules
+
+var request = require('request'),
     fs = require('fs'),
+    jsonminify = require("jsonminify"),
     StyleStats = require('stylestats'),
+
+// Config
+
+    sites = require('./sources.js'),
     cdn = "http://assets.staticlp.com/",
-    outputFile = "./css-analysis/tmp/result.json"
+    outputFile = "./css-analysis/tmp/result"
     refs = [], count = 0;
 
+function getTimeSuffix() {
+  var t = new Date(),
+      month = t.getMonth() + 1;
+
+  month = month < 10 ? "0" + month : month;
+  return "-" + t.getFullYear() + "-" + month + "-" + t.getDate();
+}
 function getStylesheet(site, cb) {
-  console.info("Fetching " + site.url);
-
-  var parseStylesheet = function(body, cssName) {
-    var stylesheetName = cssName ? "assets/" + cssName : 'assets/application-',
-        test = new RegExp("(" + stylesheetName + ").+?(\.css)");
-    return body.match(test) && body.match(test)[0];
-  }
-
   request(site.url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      site.sha = parseStylesheet(body, site.css)
+      var stylesheetName = site.css ? "assets/" + site.css : 'assets/application-',
+          test = new RegExp("(" + stylesheetName + ").+?(\.css)");
+      site.sha = body.match(test) && body.match(test)[0];
     }
     cb(site);
   });
-
 }
 
 function getStyleStats(site, cb) {
@@ -35,22 +41,25 @@ function getStyleStats(site, cb) {
 }
 
 function outputResults() {
-  var results = JSON.stringify(refs, null, 2);
-  fs.writeFile(outputFile, results, function(err) {
+  var results = jsonminify(JSON.stringify(refs, null, 2)),
+      fileName = outputFile + getTimeSuffix() + ".json";
+
+  fs.writeFile(fileName, results, function(err) {
     if(err) {
       console.log(err);
     } else {
-      console.log("JSON saved to " + outputFile);
+      console.log("JSON saved to " + fileName);
     }
   });
 }
 
-sites.forEach(function(site){
-  getStylesheet(site, function(site){
-    getStyleStats(site, function(siteWithStats){
-      refs.push(siteWithStats);
-      (refs.length == sites.length) && outputResults();
+(function init() {
+  sites.forEach(function(site){
+    getStylesheet(site, function(site){
+      getStyleStats(site, function(siteWithStats){
+        refs.push(siteWithStats);
+        (refs.length == sites.length) && outputResults();
+      });
     });
   });
-});
-
+}());
