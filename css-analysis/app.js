@@ -19,6 +19,7 @@ function getTimeSuffix() {
   month = month < 10 ? "0" + month : month;
   return "-" + t.getFullYear() + "-" + month + "-" + t.getDate();
 }
+
 function getStylesheet(site, cb) {
   request(site.url, function (error, response, body) {
     if (!error && response.statusCode == 200) {
