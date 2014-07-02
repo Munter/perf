@@ -10,21 +10,6 @@ module.exports = {
     return "-" + t.getFullYear() + "-" + month + "-" + date;
   },
 
-  outputResults: function(buffer, outputFile) {
-    var jsonminify = require("jsonminify"),
-        fs = require('fs'),
-        results = jsonminify(JSON.stringify(buffer, null, 2)),
-        fileName = outputFile + this.getTimeSuffix() + ".json";
-
-    fs.writeFile(fileName, results, function(err) {
-      if(err) {
-        console.log(err);
-      } else {
-        console.log("JSON saved to " + fileName);
-      }
-    });
-  },
-
   getAsset: function(location, assetType, cb) {
 
     var request = require('request'),
@@ -37,6 +22,34 @@ module.exports = {
         location.sha = body.match(test) && body.match(test)[0];
       }
       cb(location);
+    });
+  },
+
+  getFileSize: function(site, cdn, cb) {
+    var request = require('request'),
+        gzipSize = require('gzip-size');
+
+    request(cdn + site.sha, function (error, response, body) {
+      site.sizes = {
+        size: body.length,
+        gzippedSize: gzipSize.sync(body)
+      }
+      cb(site);
+    });
+  },
+
+  outputResults: function(buffer, outputFile) {
+    var jsonminify = require("jsonminify"),
+        fs = require('fs'),
+        results = jsonminify(JSON.stringify(buffer, null, 2)),
+        fileName = outputFile + this.getTimeSuffix() + ".json";
+
+    fs.writeFile(fileName, results, function(err) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log("JSON saved to " + fileName);
+      }
     });
   }
 
