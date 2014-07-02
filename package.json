@@ -5,6 +5,7 @@
   "devDependencies": {
     "request": "~2.36.0",
     "stylestats": "~4.1.1",
-    "jsonminify": "~0.2.3"
+    "jsonminify": "~0.2.3",
+    "gzip-size": "~0.2.0"
   }
 }

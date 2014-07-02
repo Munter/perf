@@ -1,37 +1,14 @@
 // Node modules
 
-var request = require('request'),
-    fs = require('fs'),
-    jsonminify = require("jsonminify"),
-    StyleStats = require('stylestats'),
+var StyleStats = require('stylestats'),
 
-// Config
-
+    // Config
     sites = require('./sources.js'),
+    utils = require('../utils/assets.js'),
     cdn = "http://assets.staticlp.com/",
     outputFile = "./css-analysis/tmp/result"
-    refs = [], count = 0;
+    refs = [];
 
-function getTimeSuffix() {
-  var t = new Date(),
-      month = t.getMonth() + 1,
-      date = t.getDate();
-
-  month = month < 10 ? "0" + month : month;
-  date = date < 10 ? "0" + date : date;
-  return "-" + t.getFullYear() + "-" + month + "-" + date;
-}
-
-function getStylesheet(site, cb) {
-  request(site.url, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      var stylesheetName = site.css ? "assets/" + site.css : 'assets/application-',
-          test = new RegExp("(" + stylesheetName + ").+?(\.css)");
-      site.sha = body.match(test) && body.match(test)[0];
-    }
-    cb(site);
-  });
-}
 
 function getStyleStats(site, cb) {
   var stylesheet = cdn + site.sha,
@@ -43,25 +20,13 @@ function getStyleStats(site, cb) {
   });
 }
 
-function outputResults() {
-  var results = jsonminify(JSON.stringify(refs, null, 2)),
-      fileName = outputFile + getTimeSuffix() + ".json";
-
-  fs.writeFile(fileName, results, function(err) {
-    if(err) {
-      console.log(err);
-    } else {
-      console.log("JSON saved to " + fileName);
-    }
-  });
-}
 
 (function init() {
   sites.forEach(function(site){
-    getStylesheet(site, function(site){
+    utils.getAsset(site, "css", function(site){
       getStyleStats(site, function(siteWithStats){
         refs.push(siteWithStats);
-        (refs.length == sites.length) && outputResults();
+        (refs.length == sites.length) && utils.outputResults(refs, outputFile);
       });
     });
   });

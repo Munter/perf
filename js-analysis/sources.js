@@ -1,48 +1,57 @@
 module.exports = [
   {
-    "name": "Common Core",
+    "name": "App Core",
     "id": "core",
-    "url": "http://rizzo.lonelyplanet.com/global",
-    "fileName": "common_core_no_font"
+    "url": "http://rizzo.lonelyplanet.com/modern",
+    "fileName": "app_core"
+  },
+  {
+    "name": "Stack",
+    "id": "stack",
+    "url": "http://www.lonelyplanet.com/france",
+    "fileName": "app_stack"
+  },
+  {
+    "name": "Lodging",
+    "id": "lodging",
+    "url": "http://www.lonelyplanet.com/france/hotels/l-hotel",
+    "fileName": "app_lodging"
+  },
+  {
+    "name": "Lodgings",
+    "id": "lodgings",
+    "url": "http://www.lonelyplanet.com/france/hotels",
+    "fileName": "app_lodgings"
   },
   {
     "name": "Homepage",
     "id": "homepage",
-    "url": "http://www.lonelyplanet.com"
+    "url": "http://www.lonelyplanet.com/france",
+    "fileName": "app_homepage"
   },
   {
-    "name": "Fonts",
-    "id": "fonts",
-    "url": "http://rizzo.lonelyplanet.com/global",
-    "fileName": "fonts"
-  },
-  {
-    "name": "Waldorf",
-    "id": "waldorf",
-    "url": "http://www.lonelyplanet.com/france"
-  },
-  {
-    "name": "Best in travel",
-    "id": "best-in-travel",
+    "name": "Best in Travel",
+    "id": "destinations",
     "url": "http://www.lonelyplanet.com/destinations",
-    "fileName": "destinations"
+    "fileName": "app_destinations_landing"
   },
   {
     "name": "Search",
     "id": "search",
-    "url": "http://www.lonelyplanet.com/search"
+    "url": "http://www.lonelyplanet.com/search",
+    "filename": "application"
   },
   {
     "name": "Community",
     "id": "community",
     "url": "http://www.lonelyplanet.com/thorntree",
-    "fileName": "main"
+    "fileName": "application"
   },
   {
     "name": "Luna",
     "id": "luna",
     "url": "https://auth.lonelyplanet.com/users/sign_in",
-    "fileName": "main"
+    "fileName": "application"
   },
   {
     "name": "Car Rental",
@@ -54,7 +63,7 @@ module.exports = [
     "name": "Flights",
     "id": "flights",
     "url": "http://www.lonelyplanet.com/flights",
-    "fileName": "flights/flights"
+    "fileName": "flights"
   },
   {
     "name": "Hotels",
@@ -66,12 +75,12 @@ module.exports = [
     "name": "Adventure Tours",
     "id": "adventure-tours",
     "url": "http://www.lonelyplanet.com/adventure-tours",
-    "fileName": "adventure-tours/adventure-tours"
+    "fileName": "adventure-tours"
   },
   {
     "name": "Sightseeing Tours",
     "id": "sightseeing-tours",
     "url": "http://www.lonelyplanet.com/sightseeing-tours",
-    "fileName": "sightseeing-tours/sightseeing"
+    "fileName": "sightseeing-tours"
   }
 ];
