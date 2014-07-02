@@ -14,10 +14,12 @@ var request = require('request'),
 
 function getTimeSuffix() {
   var t = new Date(),
-      month = t.getMonth() + 1;
+      month = t.getMonth() + 1,
+      date = t.getDate();
 
   month = month < 10 ? "0" + month : month;
-  return "-" + t.getFullYear() + "-" + month + "-" + t.getDate();
+  date = date < 10 ? "0" + date : date;
+  return "-" + t.getFullYear() + "-" + month + "-" + date;
 }
 
 function getStylesheet(site, cb) {
