@@ -14,7 +14,7 @@ module.exports = [
   {
     "name": "Lodging",
     "id": "lodging",
-    "url": "http://www.lonelyplanet.com/france/hotels/l-hotel",
+    "url": "http://www.lonelyplanet.com/england/london/hotels/great-northern-hotel",
     "fileName": "app_lodging"
   },
   {
@@ -26,7 +26,7 @@ module.exports = [
   {
     "name": "Homepage",
     "id": "homepage",
-    "url": "http://www.lonelyplanet.com/france",
+    "url": "http://www.lonelyplanet.com/",
     "fileName": "app_homepage"
   },
   {
